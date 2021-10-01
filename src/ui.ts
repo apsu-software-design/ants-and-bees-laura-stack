@@ -13,9 +13,10 @@ const Vorpal = vorpal();
 export function showMapOf(game:AntGame){
   console.log(getMap(game));
 }
+//user interface and design of game. Related to visual board.
 
 function getMap(game:AntGame) {
-  let places:Place[][] = game.getPlaces();
+  let places:Place[][] = game.getPlaces(); 
   let tunnelLength = places[0].length;
   let beeIcon = chalk.bgYellow.black('B');
    
